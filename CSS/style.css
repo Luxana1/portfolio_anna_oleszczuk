@@ -1,1 +1,25 @@
-/*# sourceMappingURL=style.css.map */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  text-align: center;
+  background-color: #ffffff;
+}
+header .top-navigation {
+  background-color: #2ecc71;
+  font-family: "Poppins", sans-serif;
+}
+header .top-navigation h1 {
+  color: #ffffff;
+}
+header .main-navigation {
+  font-family: "Poppins", sans-serif;
+}
+header .navigation li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(27, 26, 26);
+}/*# sourceMappingURL=style.css.map */

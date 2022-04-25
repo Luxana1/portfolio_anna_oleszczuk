@@ -1,0 +1,53 @@
+@use '../abstracts/index' as *;
+
+
+// header {
+//     position: fixed;
+//     width: 200px;
+//     height: 100%;
+//     border-right: 3px solid $green;
+//     @media only screen and (min-width: $break-m) {
+//         width: 200px;
+//     }
+// }
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    text-align: center;
+    background-color: $white;
+
+    .top-navigation {
+        background-color: $green;
+        font-family: $font-family;
+    }
+    .top-navigation h1 {
+        //color: $white;
+        @include xs {
+            color: $white;
+        }
+        @include sm {
+            color: $grayblue;
+        }
+        @include md {
+            color: $dark;
+        }
+        
+    }
+
+    .main-navigation {
+        font-family: $font-family;
+        
+    }
+    .navigation li {
+        list-style-type: none;
+        font-family: $font-family;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $dark;
+    }
+}
+

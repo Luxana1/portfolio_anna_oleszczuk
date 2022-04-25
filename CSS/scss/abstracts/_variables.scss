@@ -1,0 +1,21 @@
+//main colors
+$white: #ffffff;
+$grayblue: #67809f;
+$green: #2ecc71;
+$dark: rgb(27, 26, 26);
+$font-family:'Poppins', sans-serif;
+
+//breakpoints
+// $break-xs: 280px;
+// $break-s: 576px;
+// $break-m: 768px;
+// $break-l: 992px;
+// $break-xl: 1200px;
+
+$breakpoints: (
+    "xs": 0,
+    "sm": 576px,
+    "md": 768,
+    "lg": 992,
+    "xl": 1200,
+)
