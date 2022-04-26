@@ -1,17 +1,42 @@
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  z-index: 1;
-  text-align: center;
-  background-color: #ffffff;
+@media only screen and (min-width: 0px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    text-align: center;
+    background-color: #ffffff;
+  }
+  header .top-navigation {
+    background-color: #2ecc71;
+    font-family: "Poppins", sans-serif;
+  }
+  header .top-navigation h1 {
+    color: #ffffff;
+  }
 }
-header .top-navigation {
-  background-color: #2ecc71;
-  font-family: "Poppins", sans-serif;
-}
-header .top-navigation h1 {
-  color: #ffffff;
+@media only screen and (min-width: 768px) {
+  header {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    border-radius: 3px solid #2ecc71;
+    border-right: 3px solid #2ecc71;
+  }
+  header .top-navigation h1 {
+    display: none;
+  }
+  header .top-navigation #initials {
+    font-family: "Poppins", sans-serif;
+    font-size: 100px;
+    font-weight: 700;
+    background-color: #ffffff;
+    color: #2ecc71;
+    padding: 30px;
+    border-bottom: 3px solid #2ecc71;
+    text-align: center;
+    text-decoration: none;
+  }
 }
 header .main-navigation {
   font-family: "Poppins", sans-serif;
@@ -19,7 +44,46 @@ header .main-navigation {
 header .navigation li {
   list-style-type: none;
   font-family: "Poppins", sans-serif;
+  text-align: center;
   font-size: 1.5rem;
   text-decoration: none;
   color: rgb(27, 26, 26);
+}
+
+@media only screen and (min-width: 0px) {
+  main {
+    flex: 1;
+  }
+  main .hero {
+    display: flex;
+    flex-direction: row;
+  }
+  main .hero .hero_container-img {
+    width: 100vw;
+    height: calc(100vh - 64px);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main .hero .hero_container h1, main .hero h2 {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(27, 26, 26);
+  }
+}
+@media only screen and (min-width: 768px) {
+  main {
+    margin-left: 200px;
+  }
+  main .hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .hero .hero_container-img {
+    height: 100vw;
+    height: calc(100vw - 200px);
+  }
 }/*# sourceMappingURL=style.css.map */

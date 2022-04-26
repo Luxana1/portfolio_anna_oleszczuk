@@ -1,1 +1,39 @@
 @use '../abstracts/index' as *;
+
+main { 
+    @media only screen and (min-width: $break-xs){
+        flex: 1;
+        .hero {
+            display: flex;
+            flex-direction: row;
+
+            .hero_container-img {
+                width: 100vw;
+                height: calc(100vh - 64px);
+                object-fit: cover;
+            }
+            .hero_container h1, h2 {
+                list-style-type: none;
+                font-family: $font-family;
+                text-align: center;
+                text-decoration: none;
+                color: $dark;
+            }
+        }
+    }
+    @media only screen and (min-width: $break-m) {
+        margin-left: 200px;
+        
+        .hero{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .hero_container-img {
+                height: 100vw;
+                height: calc(100vw - 200px);
+            }
+        }
+    }
+}

@@ -1,41 +1,45 @@
 @use '../abstracts/index' as *;
 
-
-// header {
-//     position: fixed;
-//     width: 200px;
-//     height: 100%;
-//     border-right: 3px solid $green;
-//     @media only screen and (min-width: $break-m) {
-//         width: 200px;
-//     }
-// }
-
-
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    z-index: 1;
-    text-align: center;
-    background-color: $white;
-
-    .top-navigation {
-        background-color: $green;
-        font-family: $font-family;
-    }
-    .top-navigation h1 {
-        //color: $white;
-        @include xs {
+    @media only screen and (min-width: $break-xs) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        z-index: 1;
+        text-align: center;
+        background-color: $white;
+        .top-navigation {
+            background-color: $green;
+            font-family: $font-family;
+            }
+        .top-navigation h1 {
             color: $white;
+            }
+        // .top-navigation #initials {
+        //     display: none;
+        //     }
         }
-        @include sm {
-            color: $grayblue;
+
+    @media only screen and (min-width: $break-m){
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        border-radius: 3px solid $green;
+        border-right: 3px solid $green;
+        .top-navigation h1 {
+            display: none;
         }
-        @include md {
-            color: $dark;
+        .top-navigation #initials {
+            font-family: $font-family;
+            font-size: 100px;
+            font-weight: 700;
+            background-color: $white;
+            color: $green;
+            padding: 30px;
+            border-bottom: 3px solid $green;
+            text-align: center;
+            text-decoration: none;
         }
-        
     }
 
     .main-navigation {
@@ -45,6 +49,7 @@ header {
     .navigation li {
         list-style-type: none;
         font-family: $font-family;
+        text-align: center;
         font-size: 1.5rem;
         text-decoration: none;
         color: $dark;
