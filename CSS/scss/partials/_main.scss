@@ -24,6 +24,7 @@ main {
     }
     @media only screen and (min-width: $break-m) {
         margin-left: 200px;
+        margin-top: 0px;
         
         .hero{
             display: flex;
@@ -35,6 +36,47 @@ main {
                 height: 100vw;
                 height: calc(100vw - 200px);
             }
+        }
+    }
+    #portfolio {
+        @media only screen and (min-width: $break-xs){
+            padding: 30px 30px;
+            max-width: 576px;
+            margin: 0 auto;
+        }
+    }
+    #contact .contact_form form {
+        @media only screen and (min-width: $break-xs) {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+            max-width: 576px;
+            margin: 0% auto;
+        }
+    }
+    .contact_form form input, textarea {
+        @media only screen and (min-width: $break-xs){
+            padding: 14px;
+            margin-bottom: 15px;
+            flex-basis: 100%;
+            border-radius: 5px;
+            border: 0;
+            outline: 0;
+            background-color: $grey;
+            font-size: 0.9rem;
+            color: $darkgrey;
+        }
+    }
+    .contact_form form button {
+        @media only screen and (min-width: $break-xs) {
+            background-color: $white;
+            border: 2px solid $darkgrey;
+            color: $dark;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px;
         }
     }
 }

@@ -27,9 +27,13 @@ header {
         .top-navigation h1 {
             color: $white;
             }
-        // .top-navigation #initials {
-        //     display: none;
-        //     }
+        .top-navigation #initials {
+            display: none;
+            }
+        }
+        .navigation li:hover {
+            background-color: $darkgreen;
+            color: $white;
         }
 
     @media only screen and (min-width: $break-m){
@@ -42,16 +46,20 @@ header {
             display: none;
         }
         .top-navigation #initials {
+            display: block;
             font-family: $font-family;
             font-size: 110px;
             font-weight: 700;
             background-color: $white;
             color: $green;
-            padding: 30px;
+            padding: 10px;
             border-bottom: 3px solid $green;
             text-align: center;
             text-decoration: none;
         }
+        // .navigation li:hover {
+        //     border-bottom: 3px solid $green;
+        // }
     }
 
     .main-navigation {
