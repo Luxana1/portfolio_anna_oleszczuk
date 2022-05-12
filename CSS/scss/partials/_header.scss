@@ -1,15 +1,7 @@
 @use '../abstracts/index' as *;
 
-body {
-    @media only screen and (min-width: $break-xs) {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        color: $dark;
-    }
-    @media only screen and (min-width: $break-m) {
-        flex-direction: row;
-    }
+* {
+    font-family: $font-family;
 }
 
 header {
@@ -26,6 +18,7 @@ header {
             }
         .top-navigation h1 {
             color: $white;
+            text-decoration: none;
             }
         .top-navigation #initials {
             display: none;
@@ -35,12 +28,15 @@ header {
             background-color: $darkgreen;
             color: $white;
         }
+        .social {
+            margin-top: 1px;
+            margin-bottom: 20px;
+        }
 
     @media only screen and (min-width: $break-m){
         position: fixed;
         width: 200px;
         height: 100%;
-        border-radius: 3px solid $green;
         border-right: 3px solid $green;
         .top-navigation h1 {
             display: none;
@@ -55,15 +51,18 @@ header {
             padding: 10px;
             border-bottom: 3px solid $green;
             text-align: center;
-            text-decoration: none;
         }
-        // .navigation li:hover {
-        //     border-bottom: 3px solid $green;
-        // }
     }
 
     .main-navigation {
         font-family: $font-family;
+        ul {
+            margin-block-start: 0;
+            margin-block-end: 0;
+            margin-inline-start: 0;
+            margin-inline-end: 0;
+            padding-inline-start: 0;
+        }
         
     }
     .navigation li {
@@ -71,8 +70,23 @@ header {
         font-family: $font-family;
         text-align: center;
         font-size: 1.5rem;
+    }
+    a {
+        color: $white;
         text-decoration: none;
+    }
+    .nav-link {
         color: $dark;
+    }
+
+    .nav-link:hover {
+        color: $white;
+    }
+    .social a i {
+        color: $green;
+        text-align: center;
+        font-size: 1.8rem;
+        padding: 5%;
     }
 }
 

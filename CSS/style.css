@@ -1,15 +1,5 @@
-@media only screen and (min-width: 0px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: rgb(27, 26, 26);
-  }
-}
-@media only screen and (min-width: 768px) {
-  body {
-    flex-direction: row;
-  }
+* {
+  font-family: "Poppins", sans-serif;
 }
 
 @media only screen and (min-width: 0px) {
@@ -27,6 +17,7 @@
   }
   header .top-navigation h1 {
     color: #ffffff;
+    text-decoration: none;
   }
   header .top-navigation #initials {
     display: none;
@@ -36,12 +27,15 @@ header .navigation li:hover {
   background-color: #249e57;
   color: #ffffff;
 }
+header .social {
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
 @media only screen and (min-width: 768px) {
   header {
     position: fixed;
     width: 200px;
     height: 100%;
-    border-radius: 3px solid #2ecc71;
     border-right: 3px solid #2ecc71;
   }
   header .top-navigation h1 {
@@ -57,19 +51,51 @@ header .navigation li:hover {
     padding: 10px;
     border-bottom: 3px solid #2ecc71;
     text-align: center;
-    text-decoration: none;
   }
 }
 header .main-navigation {
   font-family: "Poppins", sans-serif;
+}
+header .main-navigation ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 header .navigation li {
   list-style-type: none;
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 1.5rem;
+}
+header a {
+  color: #ffffff;
   text-decoration: none;
+}
+header .nav-link {
   color: rgb(27, 26, 26);
+}
+header .nav-link:hover {
+  color: #ffffff;
+}
+header .social a i {
+  color: #2ecc71;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 5%;
+}
+
+* h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 main {
@@ -83,18 +109,127 @@ main {
     display: flex;
     flex-direction: row;
   }
-  main .hero .hero_container-img {
-    width: 100vw;
-    height: calc(100vh - 64px);
-    -o-object-fit: cover;
-       object-fit: cover;
+  main .hero .hero_image_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.69)), url(../img/office-office.jpg);
+    background-color: rgb(193, 193, 193);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15em;
+    width: 100%;
+    position: relative;
   }
-  main .hero .hero_container h1, main .hero h2 {
+  main .hero .hero_text h1, main .hero h3 {
     list-style-type: none;
     font-family: "Poppins", sans-serif;
     text-align: center;
     text-decoration: none;
-    color: rgb(27, 26, 26);
+    color: #ffffff;
+    margin: 3%;
+  }
+  main #portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+  }
+  main #portfolio .container {
+    padding: 0 10px;
+    margin: 25px;
+    border-bottom: 3px solid #2ecc71;
+  }
+  main .container a {
+    text-align: center;
+    text-decoration: none;
+    color: #2ecc71;
+    font-size: 1.5rem;
+  }
+  main .container .soon {
+    width: 400px;
+    height: auto;
+  }
+  main .about_img_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.69)), url(../img/Developer_image.jpg);
+    background-color: rgb(193, 193, 193);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15em;
+    width: 100%;
+    position: relative;
+  }
+  main .about_container h1, main p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  main h1 {
+    color: #2ecc71;
+    text-align: center;
+  }
+  main .coding_container {
+    background-image: url(../img/green-code.gif);
+    background-color: rgb(193, 193, 193);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50em;
+    width: 100%;
+  }
+  main .coding_container h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 57px;
+    font-weight: 600;
+    padding: 20%;
+  }
+  main .scs_container {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.64), rgba(0, 0, 0, 0.69)), url(../img/netmatters-web-development.png);
+    background-color: rgb(193, 193, 193);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15em;
+    width: 100%;
+    position: relative;
+  }
+  main .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  main .text h1 {
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+  }
+  main .text h1::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 160px;
+    margin: 20px auto 0;
+    background-color: #2ecc71;
+    color: rgb(193, 193, 193);
+    z-index: 1;
+  }
+  main .text li {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+  }
+  main .text a {
+    color: #2ecc71;
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 576px) {
+  main .container .soon {
+    width: 400px;
+    height: auto;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -108,16 +243,37 @@ main {
     flex-wrap: wrap;
     justify-content: center;
   }
-  main .hero .hero_container-img {
-    height: 100vw;
-    height: calc(100vw - 200px);
+  main #portfolio {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main .container .soon {
+    width: 400px;
+    height: auto;
+  }
+  main .text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 10%;
+    padding-left: 10%;
   }
 }
-@media only screen and (min-width: 0px) {
-  main #portfolio {
-    padding: 30px 30px;
-    max-width: 576px;
-    margin: 0 auto;
+@media only screen and (min-width: 1200px) {
+  main #portfolio .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main .container .soon {
+    width: 260px;
+    height: auto;
+  }
+  main .text h1, main p {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 @media only screen and (min-width: 0px) {

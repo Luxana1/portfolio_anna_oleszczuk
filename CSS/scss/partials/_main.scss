@@ -1,5 +1,14 @@
 @use '../abstracts/index' as *;
 
+* {
+    h2 {
+        text-align: center;
+        color: $white;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
+
 main { 
     position: relative;
     @media only screen and (min-width: $break-xs){
@@ -7,44 +16,207 @@ main {
         .hero {
             display: flex;
             flex-direction: row;
-
-            .hero_container-img {
-                width: 100vw;
-                height: calc(100vh - 64px);
-                object-fit: cover;
+//main page hero index.html
+            .hero_image_container {
+                background-image: linear-gradient(rgba(0 0 0 / 78%),rgba(0 0 0 / 69%)), url(../img/office-office.jpg);
+                background-color: $grey;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 15em;
+                width: 100%;
+                position: relative;
             }
-            .hero_container h1, h2 {
+
+            .hero_text h1, h3 {
                 list-style-type: none;
                 font-family: $font-family;
                 text-align: center;
                 text-decoration: none;
-                color: $dark;
+                color: $white;
+                margin: 3%;
             }
         }
+//main page portfolio index.html
+            #portfolio {
+                // border: red 3px solid;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                align-content: center;
+
+            }
+            #portfolio .container {
+                padding: 0 10px;
+                margin: 25px;
+                border-bottom: 3px solid $green;
+            }
+            .container a {
+                text-align: center;
+                text-decoration: none;
+                color: $green;
+                font-size: 1.5rem;
+            }
+            .container .soon {
+                width: 400px;
+                height: auto;
+            }
+//about me page
+        .about_img_container {
+            background-image: linear-gradient(rgba(0 0 0 / 78%),rgba(0 0 0 / 69%)), url(../img/Developer_image.jpg);
+            background-color: $grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 15em;
+            width: 100%;
+            position: relative;
+        }
+        .about_container h1, p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        h1 {
+            color: $green;
+            text-align: center;
+        }
+//coding page
+        .coding_container {
+            background-image: url(../img/green-code.gif);
+            background-color: $grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 50em;
+            width: 100%;
+        }
+        .coding_container h1 {
+            color: $white;
+            text-align: center;
+            font-size: 57px;
+            font-weight: 600;
+            padding: 20%;
+        }
+//scs scheme page
+        .scs_container {
+            background-image: linear-gradient(rgba(0 0 0 / 64%),rgba(0 0 0 / 69%)), url(../img/netmatters-web-development.png);
+            background-color: $grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 15em;
+            width: 100%;
+            position: relative;
+        }
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
+        .text h1 {
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+        .text h1::after {
+            content: "";
+            display: block;
+            height: 3px;
+            width: 160px;
+            margin: 20px auto 0;
+            background-color: $green;
+            color: $grey;
+            z-index: 1;
+        } 
+             // ul {
+        //     margin-block-start: 0;
+        //     margin-block-end: 0;
+        //     margin-inline-start: 0;
+        //     margin-inline-end: 0;
+        //     padding-inline-start: 0;
+        // }
+        .text li {
+            list-style-type: none;
+            font-family: $font-family;
+        }
+        .text a {
+            color: $green;
+            text-decoration: none;
+        }
     }
+    @media only screen and (min-width: $break-s) {
+//main page portfolio index.html
+        .container .soon {
+            width: 400px;
+            height: auto;
+        }
+    }
+
     @media only screen and (min-width: $break-m) {
         margin-left: 200px;
         margin-top: 0px;
-        
+//main page hero index.html
         .hero{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
-
-            .hero_container-img {
-                height: 100vw;
-                height: calc(100vw - 200px);
+        }
+//main page portfolio index.html
+            #portfolio {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .container .soon {
+                width: 400px;
+                height: auto;
+            }
+//about me page
+//coding page
+//SCS scheme page
+        .text {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-right: 10%;
+            padding-left: 10%;
             }
         }
-    }
-    #portfolio {
-        @media only screen and (min-width: $break-xs){
-            padding: 30px 30px;
-            max-width: 576px;
-            margin: 0 auto;
+    @media only screen and (min-width: $break-xl) {
+        //main page portfolio index.html
+        #portfolio .container {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .container .soon {
+            width: 260px;
+            height: auto;
+        }
+//about me page
+//coding page
+//SCS scheme page
+        .text h1, p {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
+
+
+    // #portfolio {
+    //     @media only screen and (min-width: $break-xs){
+    //         padding: 30px 30px;
+    //         max-width: 576px;
+    //         margin: 0 auto;
+    //     }
+    // }
     #contact .contact_form form {
         @media only screen and (min-width: $break-xs) {
             display: flex;
