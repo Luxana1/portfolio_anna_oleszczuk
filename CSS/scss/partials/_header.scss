@@ -1,6 +1,7 @@
 @use '../abstracts/index' as *;
 
 * {
+    margin: 0px;
     font-family: $font-family;
 }
 
@@ -87,6 +88,9 @@ header {
         text-align: center;
         font-size: 1.8rem;
         padding: 5%;
+    }
+    .social a i:hover {
+        color: $darkgreen;
     }
 }
 

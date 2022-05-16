@@ -8,6 +8,24 @@
         font-weight: 500;
     }
 }
+#portfolio .container h2 {
+    color: $dark;
+}
+#contact .contact_text h2 {
+    color: $dark;
+}
+#contact .contact_text li {
+    text-align: center;
+    list-style-type: none;
+    color: $dark;
+    margin: 8px;
+    font-size: 1.3rem;
+}
+#contact .contact_text a {
+    text-decoration: none;
+    color: $darkgreen;
+    font-size: 1.5rem;
+}
 
 main { 
     position: relative;
@@ -115,8 +133,7 @@ main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-right: 10%;
-            padding-left: 10%;
+            padding: 5% 10% 5%;
         }
         .text h1 {
             margin-bottom: 20px;
@@ -133,13 +150,6 @@ main {
             color: $grey;
             z-index: 1;
         } 
-             // ul {
-        //     margin-block-start: 0;
-        //     margin-block-end: 0;
-        //     margin-inline-start: 0;
-        //     margin-inline-end: 0;
-        //     padding-inline-start: 0;
-        // }
         .text li {
             list-style-type: none;
             font-family: $font-family;
@@ -171,9 +181,10 @@ main {
             #portfolio {
                 flex-direction: row;
                 flex-wrap: wrap;
+                justify-content: center;
             }
             .container .soon {
-                width: 400px;
+                width: 350px;
                 height: auto;
             }
 //about me page
@@ -183,7 +194,7 @@ main {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
             padding-right: 10%;
             padding-left: 10%;
             }
@@ -205,18 +216,9 @@ main {
         .text h1, p {
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: center;
         }
     }
-
-
-    // #portfolio {
-    //     @media only screen and (min-width: $break-xs){
-    //         padding: 30px 30px;
-    //         max-width: 576px;
-    //         margin: 0 auto;
-    //     }
-    // }
     #contact .contact_form form {
         @media only screen and (min-width: $break-xs) {
             display: flex;
