@@ -190,10 +190,12 @@ main {
     justify-content: center;
     padding-right: 10%;
     padding-left: 10%;
+    margin-bottom: 4%;
   }
   main h1 {
     color: #2ecc71;
     text-align: center;
+    margin: 2%;
   }
   main .coding_container {
     background-image: url(../img/green-code.gif);
