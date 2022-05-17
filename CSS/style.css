@@ -125,6 +125,10 @@ header .social a i:hover {
   word-break: break-all;
 }
 
+form input:focus {
+  outline: none;
+}
+
 main {
   position: relative;
 }
@@ -248,6 +252,11 @@ main {
   main .text li {
     list-style-type: none;
     font-family: "Poppins", sans-serif;
+  }
+  main .treehouse ul {
+    -webkit-padding-start: 0px;
+            padding-inline-start: 0px;
+    padding: 0 10%;
   }
   main .text a {
     color: #2ecc71;

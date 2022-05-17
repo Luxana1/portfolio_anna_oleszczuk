@@ -27,7 +27,9 @@
     font-size: 1.5rem;
     word-break: break-all;
 }
-
+form input:focus {
+    outline: none;
+}
 main { 
     position: relative;
     @media only screen and (min-width: $break-xs){
@@ -156,6 +158,10 @@ main {
         .text li {
             list-style-type: none;
             font-family: $font-family;
+        }
+        .treehouse ul {
+            padding-inline-start: 0px;
+            padding: 0 10%;
         }
         .text a {
             color: $green;
