@@ -53,6 +53,9 @@ header {
             border-bottom: 3px solid $green;
             text-align: center;
         }
+        .top-navigation #initials:hover {
+            color: $darkgreen;
+        }
     }
 
     .main-navigation {
