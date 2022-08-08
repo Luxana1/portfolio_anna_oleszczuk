@@ -12,6 +12,14 @@
     text-align: center;
     background-color: #ffffff;
   }
+  header .nav {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+  }
+  header .nav #myLinks {
+    display: none;
+  }
   header .top-navigation {
     background-color: #2ecc71;
     font-family: "Poppins", sans-serif;
@@ -31,6 +39,22 @@ header .navigation li:hover {
 header .social {
   margin-top: 1px;
   margin-bottom: 20px;
+}
+header .nav a.icon {
+  color: #ffffff;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 32px;
+  padding: 0 10px;
+}
+header .nav a:hover {
+  color: #ffffff;
+}
+header .active {
+  background-color: #04AA6D;
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   header {

@@ -13,6 +13,14 @@ header {
         z-index: 1;
         text-align: center;
         background-color: $white;
+        .nav {
+            overflow: hidden;
+            background-color: $white;
+            position: relative;
+            #myLinks {
+                display: none;
+            }
+        }
         .top-navigation {
             background-color: $green;
             font-family: $font-family;
@@ -32,6 +40,22 @@ header {
         .social {
             margin-top: 1px;
             margin-bottom: 20px;
+        }
+        .nav a.icon{
+            color: $white;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 32px;
+            padding: 0 10px;
+        }
+        .nav a:hover {
+            color: $white;
+        }
+        .active {
+            background-color: #04AA6D;
+            color: white;
         }
 
     @media only screen and (min-width: $break-m){
