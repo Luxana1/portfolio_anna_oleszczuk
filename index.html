@@ -83,7 +83,8 @@
                     </ul>
                 </div>
                 <div class="contact_form">
-                    <form name="myForm" onsubmit="return validateForm()" action="mailto:luxana.ao@gmail.com" method="POST">
+                    <form name="myForm" onsubmit="return validate()" method="POST">
+                        <div id="error_message"></div>
                         <input type="text" id="first-name" name="first_name" placeholder="First Name*" required spellcheck="false" data-ms-editor="true">
                         <input type="text" id="last-name" name="last_name" placeholder="Last Name*" required spellcheck="false" data-ms-editor="true">
                         <input type="email" id="email" name="email" placeholder="Email Address*" required spellcheck="false" data-ms-editor="true">

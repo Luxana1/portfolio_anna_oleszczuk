@@ -7,8 +7,9 @@ function myMenu() {
         x.style.display = "block";
     }
 }
-// write the function to disable myFunction on the screen greater than 768px
-function myFunction() { 
+
+// function that disable myMenu on the screen greater than 768px
+function myMenu() { 
     if (window.innerWidth > 768) {
         document.getElementById("myLinks").style.display = "none";
     } else {
@@ -16,3 +17,17 @@ function myFunction() {
     }
 }
 
+//disable the onclick event on the <a> element with the id="myLinks" on the screen greater than 768px
+function myMenu() {
+    if (window.innerWidth > 768) {
+        document.getElementById("myLinks").onclick = function() {
+            return false;
+        }
+    } else {
+        document.getElementById("myLinks").onclick = function() {
+            return true;
+        }
+    }
+}
+
+// not sure how to make only the div to be displayed on the screen greater than 768px

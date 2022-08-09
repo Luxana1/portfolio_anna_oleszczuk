@@ -21,9 +21,10 @@ var colorChange = () => {
 }
 setInterval(colorChange, speed);
 
-// stop the color change function when the message is finished
-var stopColorChange = () => {
+//pause the color change when the message is finished typing (why it doesn't work?)
+var pause = () => {
     clearInterval(colorChange);
-}   
-setTimeout(stopColorChange, speed * messageArray[0].length);
+}
+
+
 

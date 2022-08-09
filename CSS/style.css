@@ -160,6 +160,15 @@ form input:focus {
   outline: none;
 }
 
+#error-message #error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
+}
+
 main {
   position: relative;
 }
