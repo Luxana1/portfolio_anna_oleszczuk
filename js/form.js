@@ -1,7 +1,7 @@
 // form validation script for the form in the contact page (why it doesn't work?)
 function validate() {
-    var firstName = document.getElementById("firstName").value;
-    var lastName = document.getElementById("lastName").value;
+    var firstName = document.getElementById("first-name").value;
+    var lastName = document.getElementById("last-name").value;
     var email = document.getElementById("email").value;
     var subject = document.getElementById("subject").value;
     var message = document.getElementById("message").value;
@@ -10,7 +10,7 @@ function validate() {
     error_message.style.padding = "10px";
 
     var text;
-    if (firstMane.length < 2) {
+    if (firstName.length < 2) {
         text = "Please enter your first name.";
         error_message.innerHTML = text;
         return false;
