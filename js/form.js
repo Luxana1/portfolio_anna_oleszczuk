@@ -1,41 +1,27 @@
 // form validation script for the form in the contact page (why it doesn't work?)
-function validate() {
-    var firstName = document.getElementById("first-name").value;
-    var lastName = document.getElementById("last-name").value;
-    var email = document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-    var error_message = document.getElementById("error_message");
+const form = document.querySelector("form[name='myForm']");
+const firstNameInput = document.querySelector("input[name='first_name']");
+const lastNameInput = document.querySelector("input[name='last_name']");
+const emailInput = document.querySelector("input[name='email']");
+const subjectInput = document.querySelector("input[name='subject']");
+const messageInput = document.querySelector("textarea[name='message']");
 
-    error_message.style.padding = "10px";
+firstNameInput.isValid = () => !!firstNameInput.ariaValueMax;
+lastNameInput.isValid = () => !!lastNameInput.ariaValueMax;
+emailInput.isValid = () => isValidEmail(emailInput.value);
+subjectInput.isValid = () => !!subjectInput.ariaValueMax;
+messageInput.isValid = () => !!messageInput.ariaValueMax;
 
-    var text;
-    if (firstName.length < 2) {
-        text = "Please enter your first name.";
-        error_message.innerHTML = text;
-        return false;
-    }
-    if (lastName.length < 2) {
-        text = "Please enter your last name.";
-        error_message.innerHTML = text;
-        return false;
-    }
-    if (email.indexOf("@") == -1 || email.length < 6) {
-        text = "Please enter a valid email address.";
-        error_message.innerHTML = text;
-        return false;
-    }
-    if (subject.length < 2) {
-        text = "Please enter a subject.";
-        error_message.innerHTML = text;
-        return false;
-    }
-    if (message.length < 2) {
-        text = "Please enter a message.";
-        error_message.innerHTML = text;
-        return false;
-    }
-    alert("Thank you for contacting me. I will get back to you as soon as possible.");
-    return true;
+
+const isValidEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+};
+
+let showValidate = false;
+let isFormValid = false;
+
+const validateInputs = () => {
+    console.log("bla bla it works");
 }
-
+console.log("I hope, it's working");
