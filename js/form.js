@@ -18,10 +18,34 @@ const isValidEmail = (email) => {
     return re.test(String(email).toLowerCase());
 };
 
-let showValidate = false;
-let isFormValid = false;
 
-const validateInputs = () => {
-    console.log("bla bla it works");
-}
-console.log("I hope, it's working");
+// let showValidate = false;
+// let isFormValid = false;
+
+// const validateInputs = () => {
+//     console.log("bla bla it works");
+//     if (!shouldValidate) return;
+
+//     isFormValid = true;
+//     inputFields.forEach(input => {
+//         input.classList.remove("invalid");
+//         input.nextElementSibling.classList.remove("hide");
+
+//         if (!input.isValid()) {
+//             input.classList.add("invalid");
+//             isFormValid = false;
+//             input.nextElementSibling.classList.add("hide");
+//         }
+//     });
+// };
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    shouldValidate = true;
+    validateInputs();
+    if (isFormValid) {
+        form.submit();
+    }   
+});
+console.log("Hope, this one also works");
+inputFields.forEach((input) => input.addEventListener("input", validateInputs));
