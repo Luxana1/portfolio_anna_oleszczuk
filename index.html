@@ -83,31 +83,34 @@
                     </ul>
                 </div>
                 <div class="contact_form">
-                    <form name="myForm" method="POST">
-                        <div class="form-control">
+                    <form name="myForm">
+                        <div class="input-group">
                             <label>First Name</label>
-                            <input type="text" id="first-name" class="invalid" name="first_name" placeholder="First Name*">
-                            <div class="error-hint hide">*First Name is required</div>
+                            <input type="text" id="contact-first-name" placeholder="Enter your first name" onkeyup="validateFirstName()">
+                            <span id="first-name-error"></span>
                         </div>
-                        <div class="form-control">
+                        <div class="input-group">
                             <label>Last Name</label>
-                            <input type="text" id="last-name" name="last_name" placeholder="Last Name*">
-                            <div class="error-hint hide">*Last Name is required</div>
+                            <input type="text" id="contact-last-name" placeholder="Enter your last name" onkeyup="validateLastName()">
+                            <span id="last-name-error"></span>
                         </div>
-                        <div class="form-control">
+                        <div class="input-group">
                             <label>Email</label>
-                            <input type="email" id="email" name="email" placeholder="Email Address*">
-                            <div class="error-hint hide">*Email is invalid</div>
+                            <input type="email" id="contact-email" placeholder="Enter your email adress" onkeyup="validateEmail()">
+                            <span id="email-error"></span>
                         </div>
-                        <div class="form-control">
+                        <div class="input-group">
                             <label>Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="Subject">
+                            <input type="text" id="contact-subject" placeholder="Enter your subject" onkeyup="validateSubject()">
+                            <span id="subject-error"></span>
                         </div>
-                        <div class="form-control">
+                        <div class="input-group">
                             <label>Message</label>
-                            <textarea id="message" name="message" placeholder="Message*"></textarea>
+                            <textarea id="contact-message" placeholder="Enter your message" onkeyup="validateMessage()"></textarea>
+                            <span id="message-error"></span>
                         </div>
-                        <button type="submit" value="submit" class="btn">Submit</button>
+                        <button onclick="return validateSubmit()" class="btn">Submit</button>
+                        <span id="submit-error"></span>
                     </form>
                 </div>
             </div>

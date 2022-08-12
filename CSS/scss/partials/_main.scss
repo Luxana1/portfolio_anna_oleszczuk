@@ -113,14 +113,6 @@ main {
                 border: 1px solid $darkgrey;
                 width: 90%;
             }
-            input.invalid {
-                border: 1px solid red;
-            }
-            .error-hint{
-                color: red;
-                font-size: 14px;
-                margin-top: 6px;
-            }  
             .contact_form form button {
                 background-color: $white;
                 border: 2px solid $darkgrey;
@@ -131,7 +123,20 @@ main {
                 display: inline-block;
                 font-size: 18px;
             }
-
+            //style for errorm essages and success icons.
+            .input-group span {
+                position: absolute;
+                bottom: 12px;
+                right: 17px;
+                font-size: 14px;
+                color: red;
+            }
+            #submit-error {
+                color: red;
+            }
+            span .fa-solid, .fas {
+                color: seagreen;
+            }
 //about me page
         .about_img_container {
             background-image: linear-gradient(rgba(0 0 0 / 78%),rgba(0 0 0 / 69%)), url(../img/Developer_image.jpg);
