@@ -65,10 +65,10 @@ main {
                 height: auto;
             }
 // contact form for all screens
-            #contact .contact_form form {
+            #contact form {
                 display: flex;
                 flex-direction: column;
-                padding: 15px;
+                padding: 30px;
                 max-width: 576px;
                 margin: 0% auto;
             }
@@ -111,7 +111,7 @@ main {
                 background-color: $grey;
                 font-size: 0.9rem;
                 border: 1px solid $darkgrey;
-                width: 90%;
+                width: 95%;
             }
             .contact_form form button {
                 background-color: $white;

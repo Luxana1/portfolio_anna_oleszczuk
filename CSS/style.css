@@ -183,10 +183,10 @@ main {
     width: 100%;
     height: auto;
   }
-  main #contact .contact_form form {
+  main #contact form {
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 30px;
     max-width: 576px;
     margin: 0% auto;
   }
@@ -229,7 +229,7 @@ main {
     background-color: rgb(193, 193, 193);
     font-size: 0.9rem;
     border: 1px solid rgb(112, 112, 112);
-    width: 90%;
+    width: 95%;
   }
   main .contact_form form button {
     background-color: #ffffff;
