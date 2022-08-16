@@ -59,10 +59,7 @@ header a {
 header .nav-link {
   color: rgb(27, 26, 26);
 }
-header .nav-link:hover {
-  color: #ffffff;
-}
-header .navigation li:hover {
+header .navigation li:hover .nav-link, header .navigation li:hover {
   background-color: #249e57;
   color: #ffffff;
 }
