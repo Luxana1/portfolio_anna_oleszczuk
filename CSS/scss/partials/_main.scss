@@ -66,7 +66,7 @@ main {
             }
 // contact form for all screens
             #contact form {
-                display: flex;
+                // display: flex;
                 flex-direction: column;
                 padding: 30px;
                 max-width: 576px;
@@ -91,6 +91,13 @@ main {
             #contact .contact_text a:hover {
                 color: $darkgreen;
             }
+            .input-group {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+                position: relative;
+            }
             form input:focus {
                 outline: none;
             }   
@@ -112,30 +119,42 @@ main {
                 font-size: 0.9rem;
                 border: 1px solid $darkgrey;
                 width: 95%;
+                position: relative;
             }
             .contact_form form button {
-                background-color: $white;
-                border: 2px solid $darkgrey;
-                color: $dark;
+                background: $green;
+                border: 2px solid $darkgreen;
+                color: $white;
                 padding: 15px 32px;
                 text-align: center;
                 text-decoration: none;
                 display: inline-block;
                 font-size: 18px;
+                cursor: pointer;
+                margin: 0 40%;
             }
+            .contact_form form button:hover {
+                background: $darkgreen;
+                border: 2px solid $darkgreen;
+                color: $white;
+            }
+
             //style for errorm essages and success icons.
             .input-group span {
                 position: absolute;
-                bottom: 12px;
+                bottom: 20px;
                 right: 17px;
                 font-size: 14px;
                 color: red;
             }
             #submit-error {
                 color: red;
+                font-size: 1.2rem;
+                margin: 15px 0 0;
             }
             span .fa-solid, .fas {
                 color: seagreen;
+                font-size: 1.2rem;
             }
 //about me page
         .about_img_container {

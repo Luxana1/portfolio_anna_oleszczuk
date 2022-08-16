@@ -64,4 +64,3 @@ function validateSubmit() {
     setTimeout(function(){submitError.style.display = "none";}, 3000);
     return false;
 }
-console.log("script.js loaded");
