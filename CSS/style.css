@@ -32,13 +32,39 @@
     display: none;
   }
 }
+header .main-navigation {
+  font-family: "Poppins", sans-serif;
+}
+header .main-navigation ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0;
+          margin-inline-start: 0;
+  -webkit-margin-end: 0;
+          margin-inline-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+header .navigation li {
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 1.5rem;
+}
+header a {
+  text-decoration: none;
+}
+header .nav-link {
+  color: rgb(27, 26, 26);
+}
+header .nav-link:hover {
+  color: #ffffff;
+}
 header .navigation li:hover {
   background-color: #249e57;
   color: #ffffff;
-}
-header .social {
-  margin-top: 1px;
-  margin-bottom: 20px;
 }
 header .nav a.icon {
   color: #ffffff;
@@ -49,12 +75,22 @@ header .nav a.icon {
   font-size: 32px;
   padding: 0 10px;
 }
-header .nav a:hover {
-  color: #ffffff;
-}
 header .active {
   background-color: #04AA6D;
   color: white;
+}
+header .social {
+  margin-top: 1px;
+  margin-bottom: 20px;
+}
+header .social a i {
+  color: #2ecc71;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 5%;
+}
+header .social a i:hover {
+  color: #249e57;
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -80,46 +116,6 @@ header .active {
   header .top-navigation #initials:hover {
     color: #249e57;
   }
-}
-header .main-navigation {
-  font-family: "Poppins", sans-serif;
-}
-header .main-navigation ul {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-header .navigation li {
-  list-style-type: none;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-}
-header a {
-  color: #ffffff;
-  text-decoration: none;
-}
-header .nav-link {
-  color: rgb(27, 26, 26);
-}
-header .nav-link:hover {
-  color: #ffffff;
-}
-header .social a i {
-  color: #2ecc71;
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 5%;
-}
-header .social a i:hover {
-  color: #249e57;
 }
 
 * h2 {
