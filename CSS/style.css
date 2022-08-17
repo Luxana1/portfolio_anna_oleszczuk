@@ -242,6 +242,7 @@ main {
     font-size: 18px;
     cursor: pointer;
     margin: 0 40%;
+    border-radius: 5px;
   }
   main .contact_form form button:hover {
     background: #249e57;
