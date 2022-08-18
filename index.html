@@ -45,73 +45,71 @@
             </a>
         </div>
     </header>
-    <div id="main">
-        <main>
-            <div class="hero">
-                <div class="hero_image_container">
-                    <div class="hero_text">
-                        <h1 id="text"></h1>
-                        <h2 id="text"></h2>
+    <main>
+        <div class="hero">
+            <div class="hero_image_container">
+                <div class="hero_text">
+                    <h1 id="text"></h1>
+                    <h2 id="text"></h2>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio">
+            <div class="container">
+                <img src="img/web-netmatters.png" class="soon" alt="netmatters-website">
+                <h2>Netmatters</h2>
+                <a href="https://github.com/Luxana1/html-and-CSS-reflection" target="blank">View my project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="container">
+                <img src="img/coming-soon.png" class="soon" alt="comming-soon-imaage">
+                <h2>New Project</h2>
+            </div>
+            <div class="container">
+                <img src="img/coming-soon.png" class="soon" alt="comming-soon-imaage">
+                <h2>New project</h2>
+            </div>
+        </div>
+        <div id="contact">
+            <div class="contact"></div>
+            <div class="contact_text">
+                <h2>Get in touch</h2>
+                <ul>
+                    <li>Interested in collaboration or have a question? Contact me directly or use the form below.</li>
+                    <li><a href="tel:07704441202">07704441202</a></li>
+                    <li><a href="mailto:luxana.ao@gmail.com" target="_blank">luxana.ao@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="contact_form">
+                <form name="myForm">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" id="contact-name" placeholder="Enter your full name" onkeyup="validateName()">
+                        <span id="name-error"></span>
                     </div>
-                </div>
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input type="email" id="contact-email" placeholder="Enter your email adress" onkeyup="validateEmail()">
+                        <span id="email-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" id="contact-subject" placeholder="Enter your subject" onkeyup="validateSubject()">
+                        <span id="subject-error"></span>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea id="contact-message" placeholder="Enter your message" onkeyup="validateMessage()"></textarea>
+                        <span id="message-error"></span>
+                    </div>
+                    <button type="button" onclick="return validateSubmit()" class="btn">Submit</button>
+                    <span id="submit-error"></span>
+                </form>
             </div>
-            <div id="portfolio">
-                <div class="container">
-                    <img src="img/web-netmatters.png" class="soon" alt="netmatters-website">
-                    <h2>Netmatters</h2>
-                    <a href="https://github.com/Luxana1/html-and-CSS-reflection" target="blank">View my project
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </a>
-                </div>
-                <div class="container">
-                    <img src="img/coming-soon.png" class="soon" alt="comming-soon-imaage">
-                    <h2>New Project</h2>
-                </div>
-                <div class="container">
-                    <img src="img/coming-soon.png" class="soon" alt="comming-soon-imaage">
-                    <h2>New project</h2>
-                </div>
-            </div>
-            <div id="contact">
-                <div class="contact"></div>
-                <div class="contact_text">
-                    <h2>Get in touch</h2>
-                    <ul>
-                        <li>Interested in collaboration or have a question? Contact me directly or use the form below.</li>
-                        <li><a href="tel:07704441202">07704441202</a></li>
-                        <li><a href="mailto:luxana.ao@gmail.com" target="_blank">luxana.ao@gmail.com</a></li>
-                    </ul>
-                </div>
-                <div class="contact_form">
-                    <form name="myForm">
-                        <div class="input-group">
-                            <label>Name</label>
-                            <input type="text" id="contact-name" placeholder="Enter your full name" onkeyup="validateName()">
-                            <span id="name-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label>Email</label>
-                            <input type="email" id="contact-email" placeholder="Enter your email adress" onkeyup="validateEmail()">
-                            <span id="email-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label>Subject</label>
-                            <input type="text" id="contact-subject" placeholder="Enter your subject" onkeyup="validateSubject()">
-                            <span id="subject-error"></span>
-                        </div>
-                        <div class="input-group">
-                            <label>Message</label>
-                            <textarea id="contact-message" placeholder="Enter your message" onkeyup="validateMessage()"></textarea>
-                            <span id="message-error"></span>
-                        </div>
-                        <button type="button" onclick="return validateSubmit()" class="btn">Submit</button>
-                        <span id="submit-error"></span>
-                    </form>
-                </div>
-            </div>
-        </main>
-        <footer></footer> 
-    </div> 
+        </div>
+    </main>
+    <footer></footer> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
