@@ -13,30 +13,34 @@
 </head>
 <body>
     <header>
-        <div class="top-navigation">
-            <a href="index.html">
-            <div id="initials">A</div>
-            <h1>Anna Oleszczuk</h1>
-        </a>
-        </div>
-        <div class="main-navigation">
-            <ul class="navigation">
-            <li><a href="about.html" class="nav-link">About Me</a></li>
-            <li><a href="index.html#portfolio" class="nav-link">My Portfolio</a></li>
-            <li><a href="coding.html" class="nav-link">Coding Examples</a></li>
-            <li><a href="scs_scheme.html" class="nav-link">SCS Scheme</a></li>
-            <li><a href="index.html#contact" class="nav-link">Contact Me</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <a href="https://github.com/Luxana1" target="blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/luxana.ao/" target="blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/anna-oleszczuk-15729b1b3/" target="blank">
-                <i class="fa fa-linkedin" aria-hidden="true"></i>
+        <div class="nav">
+            <div class="top-navigation" class="active">
+                <a href="index.html">
+                <div id="initials">A</div>
+                <h1>Anna Oleszczuk</h1>
+            </div>
+            <div id="myLinks" class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="about.html" class="nav-link">About Me</a></li>
+                    <li><a href="index.html#portfolio" class="nav-link">My Portfolio</a></li>
+                    <li><a href="coding.html" class="nav-link">Coding Examples</a></li>
+                    <li><a href="scs_scheme.html" class="nav-link">SCS Scheme</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact Me</a></li>
+                </ul>
+                <div class="social">
+                    <a href="https://github.com/Luxana1" target="blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.instagram.com/luxana.ao/" target="blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/anna-oleszczuk-15729b1b3/" target="blank">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myMenu()">
+                <i class="fa fa-bars"></i>
             </a>
         </div>
     </header>
@@ -82,6 +86,8 @@
                 </div>
             </div>
         </div>
-    </main>      
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/menu.js"></script>      
 </body>
 </html>
