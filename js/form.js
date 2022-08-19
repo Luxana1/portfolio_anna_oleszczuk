@@ -1,4 +1,4 @@
-// form validation script for the form in the contact page (why it doesn't work?)
+// form validation script for the form in the contact page
 var nameError = document.getElementById("name-error");
 var emailError = document.getElementById("email-error");
 var subjectError = document.getElementById("subject-error");
@@ -13,7 +13,7 @@ function validateName() {
         nameError.innerHTML = "*Full name is required";
         return false;
     }
-    if (!name.match(/^[a-zA-Z]+ [a-zA-Z]+$/)) {
+    if (!name.match(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/)) {
         nameError.innerHTML = "*Name must contain only letters";
         return false;
     }
@@ -27,7 +27,7 @@ function validateEmail() {
         emailError.innerHTML = "*Email is required";
         return false;
     }
-    if (!email.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/)) {
+    if (!email.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
         emailError.innerHTML = "*Email is not valid";
         return false;
     }
