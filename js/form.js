@@ -13,7 +13,7 @@ function validateName() {
         nameError.innerHTML = "*Full name is required";
         return false;
     }
-    if (!name.match(/^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$/)) {
+    if (!name.match(/^[\w'\-,.][^0-9_!¡?%"£^@#$+*÷?¿ˆ*(){}\[\]|~<>;:[\]]{0,}$/)) {
         nameError.innerHTML = "*Name must contain only letters";
         return false;
     }
