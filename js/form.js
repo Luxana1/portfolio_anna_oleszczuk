@@ -5,7 +5,7 @@ var subjectError = document.getElementById("subject-error");
 var messageError = document.getElementById("message-error");
 var submitError = document.getElementById("submit-error");
 var form = document.getElementById("contact-form");
-var successMessage = document.getElementById("success-message");
+// var successMessage = document.getElementById("success-message");
 
 function validateName() {
     var name = document.getElementById("contact-name").value;
@@ -24,7 +24,7 @@ function validateName() {
 function validateEmail() {
     var email = document.getElementById("contact-email").value;
 
-    if (email.length == 0) {
+    if (email.length === 0) {
         emailError.innerHTML = "*Email is required";
         return false;
     }
@@ -38,7 +38,7 @@ function validateEmail() {
 function validateSubject() {
     var subject = document.getElementById("contact-subject").value;
 
-    if (subject.length == 0) {
+    if (subject.length === 0) {
         subjectError.innerHTML = "*Subject is required";
         return false;
     }
@@ -48,7 +48,7 @@ function validateSubject() {
 function validateMessage() {
     var message = document.getElementById("contact-message").value;
 
-    if (message.length == 0) {
+    if (message.length === 0) {
         messageError.innerHTML = "*Message is required";
         return false;
     }
