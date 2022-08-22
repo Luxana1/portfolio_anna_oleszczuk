@@ -65,6 +65,10 @@ main {
                 height: auto;
             }
 // contact form for all screens
+
+            #contact {
+                margin-top: 50px;
+            }
             #contact form {
                 // display: flex;
                 flex-direction: column;
@@ -143,6 +147,12 @@ main {
                 background: $darkgreen;
                 border: 2px solid $darkgreen;
                 color: $white;
+            }
+            .contact_form #success-message {
+                color: $green;
+                font-size: 1.5rem;
+                text-align: center;
+                padding: 110px;
             }
 
             //style for errorm essages and success icons.

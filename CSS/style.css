@@ -176,6 +176,9 @@ main {
     width: 100%;
     height: auto;
   }
+  main #contact {
+    margin-top: 50px;
+  }
   main #contact form {
     flex-direction: column;
     padding: 30px;
@@ -253,6 +256,12 @@ main {
     background: #249e57;
     border: 2px solid #249e57;
     color: #ffffff;
+  }
+  main .contact_form #success-message {
+    color: #2ecc71;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 110px;
   }
   main .input-group span {
     position: absolute;
