@@ -152,10 +152,10 @@ main {
                 color: $green;
                 font-size: 1.5rem;
                 text-align: center;
-                padding: 110px;
+                margin-bottom: 10px;
             }
 
-            //style for errorm essages and success icons.
+            //style for error messages and success icons.
             .input-group span {
                 position: absolute;
                 bottom: 20px;

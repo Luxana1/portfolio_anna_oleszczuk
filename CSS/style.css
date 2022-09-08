@@ -261,7 +261,7 @@ main {
     color: #2ecc71;
     font-size: 1.5rem;
     text-align: center;
-    padding: 110px;
+    margin-bottom: 10px;
   }
   main .input-group span {
     position: absolute;

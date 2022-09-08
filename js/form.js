@@ -5,7 +5,7 @@ var subjectError = document.getElementById("subject-error");
 var messageError = document.getElementById("message-error");
 var submitError = document.getElementById("submit-error");
 var form = document.getElementById("contact-form");
-// var successMessage = document.getElementById("success-message");
+var successMessage = document.getElementById("success-message");
 
 function validateName() {
     var name = document.getElementById("contact-name").value;
@@ -57,8 +57,7 @@ function validateMessage() {
 }
 function validateSubmit() {
     if (validateName() && validateEmail() && validateSubject() && validateMessage()) {
-        // successMessage.innerHTML = 'Form submitted successfully';
-        parent.document.getElementById("myForm").reset("form");
+        parent.document.getElementById("myForm").reset();
         return true;
     }
     submitError.innerHTML = "*Please fill out all fields";
@@ -66,3 +65,8 @@ function validateSubmit() {
     setTimeout(function(){submitError.style.display = "none";}, 3000);
     return false;
 }
+
+window.addEventListener("reset", function() {
+    successMessage.innerHTML = "Form submitted successfully";
+    setTimeout(function(){successMessage.innerHTML = "";}, 3000);
+});
