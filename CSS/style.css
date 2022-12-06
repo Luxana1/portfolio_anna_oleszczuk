@@ -167,10 +167,16 @@ main {
     border-bottom: 3px solid #2ecc71;
   }
   main .container a {
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: #2ecc71;
     font-size: 1.5rem;
+    position: relative;
+    display: block;
+  }
+  main .container i {
+    position: absolute;
+    margin: 8px;
   }
   main .container .soon {
     width: 100%;
@@ -409,12 +415,6 @@ main {
     padding: 0 10px;
     margin: 25px;
     border-bottom: 3px solid #2ecc71;
-  }
-  main .container a {
-    text-align: center;
-    text-decoration: none;
-    color: #2ecc71;
-    font-size: 1.5rem;
   }
   main .container .soon {
     width: 400px;

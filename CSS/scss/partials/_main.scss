@@ -55,10 +55,16 @@ main {
                 border-bottom: 3px solid $green;
             }
             .container a {
-                text-align: center;
+                text-align: left;
                 text-decoration: none;
                 color: $green;
                 font-size: 1.5rem;
+                position: relative;
+                display: block;
+            }
+            .container i {
+                position: absolute;
+                margin: 8px;
             }
             .container .soon {
                 width: 100%;
@@ -305,12 +311,6 @@ main {
             padding: 0 10px;
             margin: 25px;
             border-bottom: 3px solid $green;
-        }
-        .container a {
-            text-align: center;
-            text-decoration: none;
-            color: $green;
-            font-size: 1.5rem;
         }
         .container .soon {
             width: 400px;
