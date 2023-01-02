@@ -1,5 +1,10 @@
 @use '../abstracts/index' as *;
 
+* {
+    margin: 0px;
+    font-family: $font-family;
+}
+
 header {
     @media only screen and (min-width: $break-xs) {
         display: flex;
@@ -8,51 +13,109 @@ header {
         z-index: 1;
         text-align: center;
         background-color: $white;
+        .nav {
+            overflow: hidden;
+            background-color: $white;
+            position: relative;
+            #myLinks {
+                display: none;
+            }
+        }
+
+        // initials (logo) display style
         .top-navigation {
             background-color: $green;
             font-family: $font-family;
             }
         .top-navigation h1 {
             color: $white;
+            text-decoration: none;
             }
-        // .top-navigation #initials {
-        //     display: none;
-        //     }
+        .top-navigation #initials {
+            display: none;
+            }
+        }
+
+        // navbar display style
+        .main-navigation {
+            font-family: $font-family;
+            ul {
+                margin-block-start: 0;
+                margin-block-end: 0;
+                margin-inline-start: 0;
+                margin-inline-end: 0;
+                padding-inline-start: 0;
+            } 
+        }
+        .navigation li {
+            list-style-type: none;
+            font-family: $font-family;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav-link {
+            color: $dark;
+        }
+        .navigation li:hover .nav-link, .navigation li:hover {
+            background-color: $darkgreen;
+            color: $white;
+        }
+
+        // bars display style
+        .nav a.icon{
+            color: $white;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: 32px;
+            padding: 0 10px;
+        }
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        // social media icons display style
+        .social {
+            margin-top: 1px;
+            margin-bottom: 20px;
+        }
+        .social a i {
+            color: $green;
+            text-align: center;
+            font-size: 1.8rem;
+            padding: 5%;
+        }
+        .social a i:hover {
+            color: $darkgreen;
         }
 
     @media only screen and (min-width: $break-m){
         position: fixed;
         width: 200px;
         height: 100%;
-        border-radius: 3px solid $green;
         border-right: 3px solid $green;
         .top-navigation h1 {
             display: none;
         }
         .top-navigation #initials {
+            display: block;
             font-family: $font-family;
-            font-size: 100px;
+            font-size: 110px;
             font-weight: 700;
             background-color: $white;
             color: $green;
-            padding: 30px;
+            padding: 10px;
             border-bottom: 3px solid $green;
             text-align: center;
-            text-decoration: none;
         }
-    }
-
-    .main-navigation {
-        font-family: $font-family;
-        
-    }
-    .navigation li {
-        list-style-type: none;
-        font-family: $font-family;
-        text-align: center;
-        font-size: 1.5rem;
-        text-decoration: none;
-        color: $dark;
+        .top-navigation #initials:hover {
+            color: $darkgreen;
+        }
     }
 }
 
