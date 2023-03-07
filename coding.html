@@ -55,12 +55,40 @@
                 </i>
                 <div class="coding_box">
                     <h3>This code example is written in JavaScript and it is the typewriter effect used in the hero text on my main page.</h3>
-                    <img src="img/coding example.png" alt="JavaScript code example" class="js-image">
-                    <p>On the top, I defined my variables for the message, text position, speed and colours. Below my variables, I wrote two functions: one for typing effect and its speed and the other one for colour changes that are changing constantly when the first function is running and when the message is finished typing. I set the speed for both typing effect and colour change to 150 because it's optimal and the colours that flash when they're changing are not too distracting. </p>
-                </div>
+                    <pre>
+                        <code class="language-javascript">
+                const messageArray = ["My Name is Name Surname. <br> I am a Web Developer."];
+                let textPosition = 0;
+                const speed = 150;
+                
+                const message = () => {
+                  document.querySelector("#text").innerHTML = messageArray[0].substring(0, textPosition);
+                
+                  if (textPosition++ != messageArray[0].length) {
+                    setTimeout(message, speed); 
+                  } else {
+                    // stop color change when typing effect is finished
+                    clearInterval(colorInterval);
+                  }
+                }
+                
+                window.addEventListener("load", message);
+                
+                const colorChange = () => {   
+                  const text = document.querySelector("#text");
+                  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+                  text.style.color = "#" + randomColor;
+                }
+                
+                // call colorChange every 200ms
+                const colorInterval = setInterval(colorChange, 200);
+                        </code>
+                    </pre>
+                    <p>On the top, I defined my variables for the message, text position, speed and colours. Below my variables, I wrote two functions: one for the message and one for the colour change. <br><br> The message function now has an if statement that checks if the typing effect is finished, and if so, clears the interval that is calling the colorChange function. The colorChange function is now called every 200 milliseconds using setInterval, and its randomColor variable is re-declared inside the function so that a new random color is generated each time the function is called.</p>
             </div>
         </div>
     </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
 </body>

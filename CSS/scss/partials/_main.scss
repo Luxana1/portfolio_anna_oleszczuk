@@ -207,10 +207,10 @@ main {
             background-image: url(../img/green-code.gif);
             background-color: $grey;
             background-position: center;
-            background-repeat: no-repeat;
+            background-repeat: repeat;
             background-size: cover;
-            height: 51em;
-            width: 100%;
+            // height: 51em;
+            // width: 100%;
         }
         .coding_container h2 {
             color: $white;
@@ -237,10 +237,10 @@ main {
         }
         .coding_box p {
             color: $white;
-            text-align: center;
+            text-align: left;
             font-size: 1rem;
             font-weight: 500;
-            padding: 10px 0;
+            padding: 20px 15px;
         }
         .js-icon {
             display: flex;
@@ -256,10 +256,36 @@ main {
             font-weight: 500;
             position: relative;
         }
-        .js-image {
-            width: 100%;
-            height: 100%;
-        }
+        // code box elements styling
+        pre {
+			background-color: #1E1E1E;
+			color: #E0E0E0;
+			padding: 10px;
+			font-size: 16px;
+			font-family: Consolas, monospace;
+			white-space: pre-wrap;
+			overflow-wrap: break-word;
+			tab-size: 4;
+			-webkit-tab-size: 4;
+			-moz-tab-size: 4;
+		}
+		.keyword {
+			color: #569CD6;
+			font-weight: bold;
+		}
+		.comment {
+			color: #6A9955;
+			font-style: italic;
+		}
+		.string {
+			color: #CE9178;
+		}
+		.number {
+			color: #B5CEA8;
+		}
+		.operator {
+			color: #9CDCFE;
+		}
 //scs scheme page
         .scs_container {
             background-image: linear-gradient(rgba(0 0 0 / 64%),rgba(0 0 0 / 69%)), url(../img/netmatters-web-development.png);
