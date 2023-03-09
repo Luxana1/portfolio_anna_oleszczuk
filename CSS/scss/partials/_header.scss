@@ -93,7 +93,7 @@ header {
         .social a i:hover {
             color: $darkgreen;
         }
-
+        
     @media only screen and (min-width: $break-m){
         position: fixed;
         width: 200px;
@@ -116,6 +116,23 @@ header {
         .top-navigation #initials:hover {
             color: $darkgreen;
         }
+    }
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
     }
 }
 
