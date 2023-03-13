@@ -451,11 +451,6 @@ main {
   }
 }
 @media only screen and (min-width: 576px) {
-  main #portfolio .container {
-    padding: 0 10px;
-    margin: 25px;
-    border-bottom: 3px solid #2ecc71;
-  }
   main .container .soon {
     width: 400px;
     height: auto;
@@ -476,6 +471,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
   }
   main .container .soon {
     width: 350px;
@@ -494,15 +490,6 @@ main {
   }
 }
 @media only screen and (min-width: 1200px) {
-  main #portfolio .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  main .container .soon {
-    width: 260px;
-    height: auto;
-  }
   main .coding_container {
     height: 65em;
   }
