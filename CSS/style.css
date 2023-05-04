@@ -3,6 +3,25 @@
   font-family: "Poppins", sans-serif;
 }
 
+header .top-navigation {
+  font-family: "Poppins", sans-serif;
+}
+header .main-navigation {
+  font-family: "Poppins", sans-serif;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+header .show-menu {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in-out;
+}
+header .icon .fa-bars,
+header .icon .fa-times {
+  transition: transform 0.5s;
+}
+header .icon .fa-times {
+  transform: rotate(180deg);
+}
 @media only screen and (min-width: 0px) {
   header {
     display: flex;
@@ -12,17 +31,8 @@
     text-align: center;
     background-color: #ffffff;
   }
-  header .nav {
-    overflow: hidden;
-    background-color: #ffffff;
-    position: relative;
-  }
-  header .nav #myLinks {
-    display: none;
-  }
   header .top-navigation {
     background-color: #2ecc71;
-    font-family: "Poppins", sans-serif;
   }
   header .top-navigation h1 {
     color: #ffffff;
@@ -31,63 +41,60 @@
   header .top-navigation #initials {
     display: none;
   }
-}
-header .main-navigation {
-  font-family: "Poppins", sans-serif;
-}
-header .main-navigation ul {
-  -webkit-margin-before: 0;
-          margin-block-start: 0;
-  -webkit-margin-after: 0;
-          margin-block-end: 0;
-  -webkit-margin-start: 0;
-          margin-inline-start: 0;
-  -webkit-margin-end: 0;
-          margin-inline-end: 0;
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-header .navigation li {
-  list-style-type: none;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-}
-header a {
-  text-decoration: none;
-}
-header .nav-link {
-  color: rgb(27, 26, 26);
-}
-header .navigation li:hover .nav-link, header .navigation li:hover {
-  background-color: #249e57;
-  color: #ffffff;
-}
-header .nav a.icon {
-  color: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 32px;
-  padding: 0 10px;
-}
-header .active {
-  background-color: #04AA6D;
-  color: white;
-}
-header .social {
-  margin-top: 1px;
-  margin-bottom: 20px;
-}
-header .social a i {
-  color: #2ecc71;
-  text-align: center;
-  font-size: 1.8rem;
-  padding: 5%;
-}
-header .social a i:hover {
-  color: #249e57;
+  header .main-navigation {
+    overflow: hidden;
+  }
+  header .main-navigation ul {
+    -webkit-margin-before: 0;
+            margin-block-start: 0;
+    -webkit-margin-after: 0;
+            margin-block-end: 0;
+    -webkit-margin-start: 0;
+            margin-inline-start: 0;
+    -webkit-margin-end: 0;
+            margin-inline-end: 0;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  header .navigation li {
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  header .nav a.icon {
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 32px;
+    padding: 0 10px;
+  }
+  header a {
+    text-decoration: none;
+  }
+  header .nav-link {
+    color: rgb(27, 26, 26);
+  }
+  header .navigation li:hover .nav-link,
+  header .navigation li:hover {
+    background-color: #249e57;
+    color: #ffffff;
+  }
+  header .social {
+    margin-top: 1px;
+    margin-bottom: 20px;
+  }
+  header .social a i {
+    color: #2ecc71;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 5%;
+  }
+  header .social a i:hover {
+    color: #249e57;
+  }
 }
 @media only screen and (min-width: 768px) {
   header {
@@ -112,6 +119,9 @@ header .social a i:hover {
   }
   header .top-navigation #initials:hover {
     color: #249e57;
+  }
+  header .main-navigation {
+    overflow: visible;
   }
 }
 

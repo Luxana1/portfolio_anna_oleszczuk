@@ -1,4 +1,4 @@
-// menu navigation
+// menu navigation dropdown
 function myMenu() {
     const x = document.getElementById("myLinks");
     const icon = document.querySelector(".icon i");
@@ -6,33 +6,17 @@ function myMenu() {
     x.classList.toggle("show-menu");
     icon.classList.toggle("fa-times");
     icon.classList.toggle("fa-bars");
-
-    // if (window.innerWidth < 768) {
-    //   if (x.style.display === "block") {
-    //     // close the menu with a fade out animation
-    //     x.style.animation = "fadeOut 0.5s";
-    //     setTimeout(() => x.style.display = "none", 500);
-    //     icon.classList.remove("fa-times");
-    //     icon.classList.add("fa-bars");
-    //   } else {
-    //     // open the menu with a fade in animation
-    //     x.style.animation = "fadeIn 0.5s";
-    //     x.style.display = "block";
-    //     icon.classList.remove("fa-bars");
-    //     icon.classList.add("fa-times");
-    //   }
-    // } else {
-    //   x.style.display = "block";
-    // }
   }
   
+// disable menu navigation dropdown
+function myMenu() {
+  if (window.innerWidth <= 576) {
+    const x = document.getElementById("myLinks");
+    const icon = document.querySelector(".icon i");
 
-// when the screen is greater than 768px, remove display:mone from the menu
-window.addEventListener("resize", myMenu);
-    const x = document.getElementById("myLinks")
-    if (window.innerWidth >= 768) {
-        x.style.display = "block";
-    } else {
-        (window.innerWidth < 768)
-        x.style.display = "none";
-    }
+    x.classList.toggle("show-menu");
+    icon.classList.toggle("fa-times");
+    icon.classList.toggle("fa-bars");
+  }
+}
+
