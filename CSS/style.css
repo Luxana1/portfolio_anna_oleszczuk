@@ -6,6 +6,28 @@
 header .top-navigation {
   font-family: "Poppins", sans-serif;
 }
+header a {
+  text-decoration: none;
+}
+header .nav-link {
+  color: rgb(27, 26, 26);
+}
+header .active-link {
+  background-color: #249e57;
+  color: white;
+  display: block;
+  width: auto;
+  padding: inherit;
+}
+header .navigation li:hover .nav-link,
+header .navigation li:hover {
+  background-color: #249e57;
+  color: white;
+}
+header .no-hover {
+  background-color: inherit !important;
+  color: inherit !important;
+}
 header .main-navigation {
   font-family: "Poppins", sans-serif;
   max-height: 0;
@@ -61,6 +83,8 @@ header .icon .fa-times {
     font-family: "Poppins", sans-serif;
     text-align: center;
     font-size: 1.5rem;
+    margin: 20px 0;
+    padding: 20px 0;
   }
   header .nav a.icon {
     color: white;
@@ -69,18 +93,7 @@ header .icon .fa-times {
     right: 0;
     top: 0;
     font-size: 32px;
-    padding: 0 10px;
-  }
-  header a {
-    text-decoration: none;
-  }
-  header .nav-link {
-    color: rgb(27, 26, 26);
-  }
-  header .navigation li:hover .nav-link,
-  header .navigation li:hover {
-    background-color: #249e57;
-    color: #ffffff;
+    padding: inherit;
   }
   header .social {
     margin-top: 1px;
@@ -122,6 +135,9 @@ header .icon .fa-times {
   }
   header .main-navigation {
     overflow: visible;
+  }
+  header .nav a.icon {
+    display: none;
   }
 }
 

@@ -4,32 +4,51 @@
     margin: 0px;
     font-family: $font-family;
   }
-  
   header {
     .top-navigation {
       font-family: $font-family;
     }
-  
+    a {
+      text-decoration: none;
+    }
+    .nav-link {
+      color: $dark;
+    }
+    .active-link {
+      background-color: $darkgreen;
+      color: white;
+      display: block;
+      width: auto;
+      padding: inherit;
+    }
+    .navigation li:hover .nav-link,
+    .navigation li:hover {
+      background-color: $darkgreen;
+      color: white;
+    }
+    .no-hover {
+      background-color: inherit !important;
+      color: inherit !important;
+    }
+    
+    // hamburger menu, top menu small screen devices animation effect
     .main-navigation {
       font-family: $font-family;
       max-height: 0;
       transition: max-height 0.5s ease-in-out;
     }
-  
     .show-menu {
       max-height: 500px;
       transition: max-height 0.5s ease-in-out;
     }
-  
     .icon .fa-bars,
     .icon .fa-times {
       transition: transform 0.5s;
     }
-  
     .icon .fa-times {
       transform: rotate(180deg);
     }
-  
+  // ----------------------------------end of animation effect
     @media only screen and (min-width: $break-xs) {
       display: flex;
       flex-direction: column;
@@ -37,20 +56,16 @@
       z-index: 1;
       text-align: center;
       background-color: $white;
-  
       .top-navigation {
         background-color: $green;
-      }
-  
+      }  
       .top-navigation h1 {
         color: $white;
         text-decoration: none;
-      }
-  
+      }  
       .top-navigation #initials {
         display: none;
-      }
-  
+      } 
       .main-navigation {
         overflow: hidden;
         ul {
@@ -60,51 +75,36 @@
           margin-inline-end: 0;
           padding-inline-start: 0;
         }
-      }
-  
+      }  
       .navigation li {
         list-style-type: none;
         font-family: $font-family;
         text-align: center;
         font-size: 1.5rem;
+        margin: 20px 0;
+        padding: 20px 0;
       }
 
-        .nav a.icon{
-            color: white;
-            display: block;
-            position: absolute;
-            right: 0;
-            top: 0;
-            font-size: 32px;
-            padding: 0 10px;
-        }
-  
-      a {
-        text-decoration: none;
+      // hamburger menu icon
+      .nav a.icon{
+          color: white;
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          font-size: 32px;
+          padding: inherit;
       }
-  
-      .nav-link {
-        color: $dark;
-      }
-  
-      .navigation li:hover .nav-link,
-      .navigation li:hover {
-        background-color: $darkgreen;
-        color: $white;
-      }
-  
       .social {
         margin-top: 1px;
         margin-bottom: 20px;
-      }
-  
+      }  
       .social a i {
         color: $green;
         text-align: center;
         font-size: 1.8rem;
         padding: 5%;
-      }
-  
+      } 
       .social a i:hover {
         color: $darkgreen;
       }
@@ -115,11 +115,9 @@
       width: 200px;
       height: 100%;
       border-right: 3px solid $green;
-  
       .top-navigation h1 {
         display: none;
       }
-  
       .top-navigation #initials {
         display: block;
         font-family: $font-family;
@@ -131,12 +129,14 @@
         border-bottom: 3px solid $green;
         text-align: center;
       }
-  
       .top-navigation #initials:hover {
         color: $darkgreen;
       }
       .main-navigation {
         overflow: visible;
+      }
+      .nav a.icon {
+        display: none;
       }
     }
   }
