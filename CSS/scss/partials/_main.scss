@@ -4,14 +4,17 @@
     h2 {
         text-align: center;
         color: $white;
-        font-size: 2rem;
         font-weight: 500;
     }
 }
 #portfolio .container h2 {
     color: $dark;
 }
-                                             
+// hover for anchors and buttons
+.contact_form form button:hover, .container a:hover {
+    background: $darkgreen;
+    color: $white;
+}                                           
 main { 
     position: relative;
     @media only screen and (min-width: $break-xs){
@@ -42,7 +45,6 @@ main {
         }
 //main page portfolio index.html
             #portfolio {
-                // border: red 3px solid;
                 display: flex;
                 flex-wrap: wrap;
                 flex-direction: column;
@@ -52,26 +54,26 @@ main {
             #portfolio .container {
                 padding: 0 10px;
                 margin: 25px;
-                border-bottom: 3px solid $green;
+                padding: 20px;
+                box-shadow: 0 0 0.5rem rgb(112, 112, 112);
             }
             .container a {
-                text-align: left;
+                text-align: center;
                 text-decoration: none;
-                color: $green;
-                font-size: 1.5rem;
+                background-color: $green;
+                color: white;
+                margin: 10px 5px;
+                padding: 5px;
+                border-radius: 2px;
+                font-size: 1.1rem;
                 position: relative;
                 display: block;
-            }
-            .container i {
-                position: absolute;
-                margin: 8px;
             }
             .container .soon {
                 width: 100%;
                 height: auto;
             }
 // contact form for all screens
-
             #contact {
                 margin-top: 50px;
             }
@@ -148,11 +150,6 @@ main {
                 cursor: pointer;
                 margin: 0 40%;
                 border-radius: 5px;
-            }
-            .contact_form form button:hover {
-                background: $darkgreen;
-                border: 2px solid $darkgreen;
-                color: $white;
             }
             .contact_form #success-message {
                 color: $green;
@@ -354,11 +351,25 @@ main {
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
-                align-items: baseline;
             }
-            .container .soon {
+            .soon {
                 width: 350px;
                 height: auto;
+            }
+            .link {
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+            }
+            .container a {
+                margin: auto;
+            }
+            .info {
+                width: 400px;
+                height: auto;
+            }
+            .description {
+                padding: 10px 0px;
             }
 //about me page
 //coding page
