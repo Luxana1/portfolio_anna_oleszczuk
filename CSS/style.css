@@ -383,19 +383,31 @@ main {
     font-weight: 500;
     padding: 20px 15px;
   }
-  main .js-icon {
+  main .code-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(201, 178, 9);
     width: 60px;
     height: 60px;
     margin: 0 auto -15px;
     z-index: 1;
-    border-radius: 50%;
-    color: #ffffff;
     font-weight: 500;
     position: relative;
+    border-radius: 50%;
+    color: white;
+  }
+  main .js-icon {
+    background-color: rgb(255, 221, 0);
+  }
+  main .html-icon {
+    background-color: #249e57;
+  }
+  main .example {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 25px;
   }
   main pre {
     background-color: #1E1E1E;
