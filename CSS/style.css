@@ -151,6 +151,18 @@ header .icon .fa-times {
   color: rgb(27, 26, 26);
 }
 
+.resources {
+  background-color: white !important;
+  color: #2ecc71 !important;
+  font-size: 0.9rem !important;
+  text-align: left !important;
+  padding: 0 !important;
+}
+
+.resources:hover {
+  color: #249e57 !important;
+}
+
 .contact_form form button:hover, .container a:hover {
   background: #249e57;
   color: #ffffff;

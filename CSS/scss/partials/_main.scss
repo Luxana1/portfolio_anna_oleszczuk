@@ -10,6 +10,17 @@
 #portfolio .container h2 {
     color: $dark;
 }
+// portfolio resources
+.resources {
+    background-color: white!important;
+    color: $green!important;
+    font-size: 0.9rem!important;
+    text-align: left!important;
+    padding: 0!important;
+}
+.resources:hover {
+    color: $darkgreen!important;
+}
 // hover for anchors and buttons
 .contact_form form button:hover, .container a:hover {
     background: $darkgreen;
