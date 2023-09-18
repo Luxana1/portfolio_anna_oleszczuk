@@ -359,7 +359,7 @@ main {
         }
     }
 
-    @media only screen and (min-width: $break-m) {
+    @media only screen and (min-width: $break-l) {
         margin-left: 200px;
         margin-top: 0px;
 //main page hero index.html
@@ -396,9 +396,6 @@ main {
             }
 //about me page
 //coding page
-            .coding_container {
-                height: 53em;
-            }
 //SCS scheme page
         .text {
             display: flex;

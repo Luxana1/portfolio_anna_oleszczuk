@@ -8,9 +8,9 @@ function myMenu() {
     icon.classList.toggle("fa-bars");
 }
 
-// disable menu navigation dropdown on screens larger than 576px
+// disable menu navigation dropdown on screens larger than 768px
 function myMenu() {
-  if (window.innerWidth <= 576) {
+  if (window.innerWidth <= 767) {
     const x = document.getElementById("myLinks");
     const icon = document.querySelector(".icon i");
 

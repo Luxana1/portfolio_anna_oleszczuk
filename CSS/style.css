@@ -94,6 +94,7 @@ header .icon .fa-times {
     top: 0;
     font-size: 32px;
     padding: inherit;
+    margin-right: 10px;
   }
   header .social {
     margin-top: 1px;
@@ -490,7 +491,7 @@ main {
     height: auto;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   main {
     margin-left: 200px;
     margin-top: 0px;
@@ -524,9 +525,6 @@ main {
   }
   main .description {
     padding: 10px 0px;
-  }
-  main .coding_container {
-    height: 53em;
   }
   main .text {
     display: flex;
